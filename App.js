@@ -21,9 +21,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Text>Open upp App.js to start working on your app!</Text>
       {categories.map((category) => (
-        <Text key={category.id}>{category.name}</Text>
+        <Text key={category.id}>{category.id +". "+  category.name}</Text>
       ))}
     </View>
   );
